@@ -502,7 +502,7 @@ $(document).ready(function () {
         });
         //"分頁"點擊
         $('.pagination,.searchPagination').click(function (e) {
-            e.preventDefault();
+            // e.preventDefault();
             paginationClick(e)
         });
         // "搜索"點擊按鈕功能
