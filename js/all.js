@@ -116,6 +116,7 @@ $(document).ready(function () {
             let searchVal = $('.navRight input').val();
             //不分英文大小寫
             let reg = new RegExp(searchVal, "i");
+            console.log(reg);
             searchFilter = [] //清空重置
             nameTransformData.forEach(function (val, i) {
                 searchFilter[i] = {};
@@ -504,22 +505,22 @@ $(document).ready(function () {
             e.preventDefault();
             paginationClick(e)
         });
-        //"搜索"點擊按鈕功能
-        // $('.searchBtn').click(function (e) {
-        //     e.preventDefault();
-        //     search();
-        //     //清空搜尋欄
-        //     // $('.navRight input').val('');
-        // });
+        // "搜索"點擊按鈕功能
+        $('.searchBtn').click(function (e) {
+            e.preventDefault();
+            search();
+            //清空搜尋欄
+            $('.navRight input').val('');
+        });
         //"搜索"按下Enter功能
         $('#search').keyup(function (e) {
             // alert(event.which);
-            if (event.which == 13) {
-                // alert("按下Enter了");
-                search();
-                //清空搜尋欄
-                $('.navRight input').val('');
-            }
+            // if (event.which == 13) {
+            //     alert("按下Enter了");
+            //     // search();
+            //     //清空搜尋欄
+            //     // $('.navRight input').val('');
+            // }
         });
     });
     //選單active功能
