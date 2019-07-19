@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 微軟正黑體; }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li,ul{
+    list-style: none;
+
+}
+header{
+    margin-top: 10px;
+    background-color: #007BFF;
+    height: 50px;;
+    
+}
+
+header ul>li{
+    width: 100px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    border-right: 1px #ccc solid;
+    line-height: 50px;
+    position: relative;
+    color: #FFF;
+    cursor: pointer;
+   
+}
+header li:hover{
+    background-color: lightblue;
+}
+
+header li.active{
+    background-color: blue;
+}
+
+li.liCountySelect{
+    width: 200px;
+}
+
+#CountySelect{
+    width: 90%;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px #ccc solid;
+    color: gray;
+    font-size: 1.1rem;
+    font-family: 微軟正黑體;
+    padding-left: 10px;
+}
+
+
+
+#CountySelect option{
+    width: 90%;
+   
+}
+
+header ul>li:hover>ul,header ul>li.active>ul{
+    display: block;
+}
+/* header .select1:hover>ul,header .select2:hover>ul{
+    display: block;
+} */
+
+/* .select1 ,.select2 {
+   position: relative;
+    
+} */
+header ul>li>ul{
+    position: absolute;
+     top: 50px;
+    right: -1px; 
+    display: none;
+    background-color: #FFF;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    
+}
+/* .select1 ul,.select2 ul{
+    position: absolute;
+     top: 30px;
+    right: -1px; 
+    display: none;
+    background-color: #FFF;
+} */
+header ul>li>ul>li{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    background-color: #FFF;
+    border: 1px #000 solid;
+    color: #000;
+    
+}
+/* .select1 ul>li,.select2 ul>li{
+    position: relative;
+    
+} */
+header ul>li>ul>li>ul{
+    position: absolute;
+    top: -1px;
+    right: -100px;
+    width: 100px;
+    display: none;
+    background-color: #FFF;
+    
+}
+/* .select1 ul>li>ul,.select2 ul>li>ul{
+    position: absolute;
+    top: -1px;
+    right: -100px;
+    width: 100px;
+    display: none;
+    background-color: #FFF;
+} */
+header ul>li>ul>li:hover>ul{
+    
+    display: block;
+}
+/* .select1 ul>li:hover>ul,.select2 ul>li:hover>ul{
+    
+    display: block;
+} */
+
+
+
+.navRight{
+    float: right;
+    margin-right: 10px;
+    line-height: 50px;
+}
+.navRight input{
+    height: 25px;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+}
+
+.navRight button{
+    height: 30px;
+    width: 60px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #28A745;
+    color: #FFF;
+    border: 1px #28A745 solid;
+    font-family: 微軟正黑體;
+    margin-left: 10px;
+}
+
+.fixClear{
+    clear: both;
+}
+
+#main{
+    margin-top: 20px;
+    overflow: auto;
+}
+
+table{
+    border: 1px #ccc solid;
+    border-collapse:collapse ;
+    width: 30%;
+    margin: 0 1.333%;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 5%;
+    padding: 1%;
+}
+
+.status{
+    background-color: lightgray;
+}
+
+.status-aqi1{
+    background-color: #00cc99;
+}
+.status-aqi2{
+    background-color: #ffff00;
+}
+.status-aqi3{
+    background-color: #ff7e00;
+}
+.status-aqi4{
+    background-color: #ff0000;
+}
+.status-aqi5{
+    background-color: #8f3f97;
+}
+.status-aqi6{
+    background-color: #7e0023;
+}
+
+th{
+    height: 50px;
+    font-size: 1.5rem;
+    border-bottom: 1px gray solid;
+   
+}
+thead{
+    margin-bottom: 20px;
+}
+tbody{
+    padding-top: 20px;
+    margin-top: 20px;
+}
+td{
+    width: 5%;
+    padding: 2px;
+    padding-left: 5%;
+    
+}
+
+.pagination,.searchPagination{
+    display: block;
+    text-align: center;
+    padding: 1px;
+    margin: 30px 0;
+}
+
+.pagination li,.searchPagination li{
+    display: inline-block;
+    margin: 5px;
+}
+.pagination li:hover a,.searchPagination li:hover a{
+    background-color:lightgreen;
+}
+.pagination li a,.searchPagination li a{
+    color: #000;
+   padding: 5px 10px;
+    background-color:whitesmoke;
+    border: green 1px solid;
+    border-radius: 2px;
+}
+.pagination li a.prevPage,.searchPagination li a.prevPage{
+   padding: 5px;
+}
+.pagination li a.nextPage,.searchPagination li a.nextPage{
+   padding: 5px ;
+
+}
+
+.searchEmpty{
+    text-align: center;
+    margin-top: 15%;
+    font-size: 2rem;
+    /* height: 100%; */
+    
+}

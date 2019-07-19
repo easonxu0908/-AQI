@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AQI面試考題</title>
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                AQI
+            </li>
+            <li class="select1">
+                選單1
+                <ul>
+                    <li>選單1-1
+                        <ul>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                        </ul>
+                    </li>
+                    <li>選單1-2
+                        <ul>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                        </ul>
+                    </li>
+                    <li>選單1-3
+                        <ul>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                        </ul>
+                    </li>
+                    <li>選單1-4
+                        <ul>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="select2">
+                選單2
+                <ul>
+                    <li>選單1-1
+                        <ul>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                        </ul>
+                    </li>
+                    <li>選單1-2
+                        <ul>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                        </ul>
+                    </li>
+                    <li>選單1-3
+                        <ul>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                        </ul>
+                    </li>
+                    <li>選單1-4
+                        <ul>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                            <li>選單1-1-1</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="liCountySelect">
+                <form action="">
+                    <select name="" id="CountySelect" aria-placeholder="請選擇縣市">
+                        <option>請選擇縣市</option>
+                        <option value="全部縣市">全部縣市</option>
+                    </select>
+                </form>
+            </li>
+        </ul>
+        <form class="navRight">
+            <input type="text" id="search">
+            <!-- <button class="searchBtn">搜尋</button> -->
+        </form>
+        <div class="fixClear"></div>
+    </header>
+    <main id="main">
+        <div class="searchEmpty">
+            <h4>- - 請先選擇縣市 - -</h4>
+        </div>
+        <!-- <table>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <h4>高雄市-橋頭測站</h4>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>空氣品質</td>
+                    <td>${Status}</td>
+                </tr>
+                <tr>
+                    <td>SO2</td>
+                    <td>${SO2} ppb</td>
+                </tr>
+                <tr>
+                    <td>CO</td>
+                    <td>${CO} ppm</td>
+                </tr>
+                <tr>
+                    <td>空氣品質</td>
+                    <td>${Status}</td>
+                </tr>
+                <tr>
+                    <td>SO2</td>
+                    <td>${SO2} ppb</td>
+                </tr>
+                <tr>
+                    <td>CO</td>
+                    <td>${CO} ppm</td>
+                </tr>
+                <tr>
+                    <td>空氣品質</td>
+                    <td>${Status}</td>
+                </tr>
+                <tr>
+                    <td>SO2</td>
+                    <td>${SO2} ppb</td>
+                </tr>
+                <tr>
+                    <td>CO</td>
+                    <td>${CO} ppm</td>
+                </tr>
+            </tbody>
+        </table> -->
+    </main>
+    <ul class="pagination" style="display: none">
+        <li><a href="#" data-num='-1'>《</a></li>
+        <li><a href="#" data-page='1'>1</a></li>
+        <li><a href="#" data-num='1'>》</a></li>
+    </ul>
+    <ul class="searchPagination" style="display: none">
+        <li><a href="#" data-num='-1'>《</a></li>
+        <li><a href="#" data-page='1'>1</a></li>
+        <li><a href="#" data-num='1'>》</a></li>
+    </ul>
+
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>
